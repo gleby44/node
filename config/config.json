@@ -1,0 +1,13 @@
+{
+	"port":2556,
+	"mongoose":{
+		"url":"mongodb://localhost/kurs",
+		"options":{
+			"server":{
+				"socketOptions":{
+					"keepAlive":1
+				}
+			}
+		}
+	}
+}

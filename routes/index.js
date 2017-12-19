@@ -32,19 +32,16 @@ router.get('/add/:url/:name/:body?',function(req,res,next){
 		var p_name=req.params.name;
 	}else{
 		var p_name='default';
-		var index='index';
 	}
 	if(req.params.url){
 		var p_url=req.params.url;
 	}else{
-		var p_url='default';
-		var index='index';
+		var p_url='index';
 	}
 	if(req.params.body){
 		var p_body=req.params.body;
 	}else{
 		var p_body='default';
-		var index='index';
 	}
 	var themas=new Themas({
 		name: p_name,
